@@ -112,8 +112,7 @@ BOARD_CHARGER_DISABLE_INIT_BLANK := true
 BOARD_USES_CYANOGEN_HARDWARE := true
 BOARD_HARDWARE_CLASS += \
     hardware/cyanogen/cmhw \
-    device/xiaomi/oxygen/cmhw
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/enable_dt2w"
+TARGET_TAP_TO_WAKE_NODE := "/sys/class/input/input4/device/wakeup_mode"
 
 # CNE / DPM
 BOARD_USES_QCNE := true
